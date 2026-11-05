@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALI RAZA TRAVELS | Explore Pakistan with Confidence</title>
+<meta name="description" content="ALI RAZA TRAVELS is a travel agency in Lahore offering Pakistan tour packages: Hunza, Skardu, Naran Kaghan, Swat and Fairy Meadows.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1F3A'/%3E%3Ccircle cx='46' cy='19' r='6' fill='%2313B8A6'/%3E%3Cpath d='M6 50L24 22l9 14 7-9 18 23z' fill='%23fff'/%3E%3Cpath d='M6 50h52v4Q32 47 6 54z' fill='%2313B8A6'/%3E%3C/svg%3E">
+<style>
+:root{--navy:#0B1F3A;--navy2:#12304f;--turq:#13B8A6;--turq2:#0e9a8b;--mist:#F5F7FA;--line:rgba(11,31,58,.12)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;color:var(--navy);line-height:1.6;background:#fff}
+h1,h2,h3{line-height:1.15;font-weight:800;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--turq);outline-offset:2px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h2{font-size:clamp(1.7rem,4vw,2.4rem)}
+.sub{color:rgba(11,31,58,.7);max-width:620px;margin-top:8px}
+.btn{display:inline-block;border:0;border-radius:10px;padding:12px 22px;font:600 .95rem inherit;font-family:inherit;cursor:pointer;text-decoration:none;text-align:center;background:var(--turq);color:#fff}
+.btn:hover{background:var(--turq2)}
+.btn.ghost{background:transparent;border:2px solid #fff}
+.btn.ghost:hover{background:#fff;color:var(--navy)}
+.btn.dark{background:var(--navy)}.btn.dark:hover{background:var(--navy2)}
+.btn.wa{background:#25D366;color:var(--navy)}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.03em;font-size:1.1rem}
+.logo b{color:var(--turq)}
+nav ul{display:flex;gap:22px;list-style:none;align-items:center;padding:0}
+nav a{text-decoration:none;font-weight:600;font-size:.92rem}
+nav a:hover{color:var(--turq2)}
+#menu{display:none;background:none;border:0;padding:6px;cursor:pointer;color:var(--navy)}
+@media(max-width:960px){#menu{display:block}nav{display:none;position:absolute;left:0;right:0;top:64px;background:#fff;border-bottom:1px solid var(--line);padding:8px 20px 20px}nav.open{display:block}nav ul{flex-direction:column;align-items:stretch;gap:0}nav li a{display:block;padding:13px 0;border-bottom:1px solid var(--line)}nav .btn{margin-top:14px;display:block}}
+/* hero */
+.hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:96px 0 60px}
+.hero>svg{position:absolute;inset:0;width:100%;height:100%}
+#snow{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,31,58,.6),rgba(11,31,58,.1) 45%,rgba(11,31,58,.82))}
+.hero .wrap{position:relative;z-index:2}
+.hero h1{font-size:clamp(2.6rem,8vw,5rem);max-width:760px;animation:rise .8s ease both}
+.hero p{max-width:600px;font-size:1.15rem;margin:20px 0 28px;color:rgba(255,255,255,.88);animation:rise .8s .1s ease both}
+.cta{display:flex;gap:12px;flex-wrap:wrap;animation:rise .8s .2s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.search{margin-top:48px;background:#fff;color:var(--navy);border-radius:16px;padding:16px;display:grid;gap:12px;grid-template-columns:1.4fr 1fr .8fr auto;align-items:end;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+@media(max-width:800px){.search{grid-template-columns:1fr 1fr}.search .btn{grid-column:1/-1}}
+label{font-size:.85rem;font-weight:600;display:block}
+input,select,textarea{width:100%;margin-top:4px;padding:11px 12px;border:1px solid rgba(11,31,58,.25);border-radius:9px;font:inherit;color:var(--navy);background:#fff}
+input:focus,select:focus,textarea:focus{border-color:var(--turq);outline:2px solid rgba(19,184,166,.3)}
+/* cards */
+.grid{display:grid;gap:22px;margin-top:32px;grid-template-columns:repeat(auto-fill,minmax(290px,1fr))}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,.06);border:1px solid var(--line);display:flex;flex-direction:column;transition:box-shadow .2s}
+.card:hover{box-shadow:0 12px 30px rgba(11,31,58,.14)}
+.card .img{aspect-ratio:16/10;position:relative}
+.card .img svg{width:100%;height:100%;display:block}
+.tag{position:absolute;left:12px;top:12px;background:rgba(11,31,58,.88);color:#fff;font-size:.75rem;font-weight:600;padding:4px 12px;border-radius:99px}
+.card .body{padding:18px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:1.2rem}
+.card p{font-size:.92rem;color:rgba(11,31,58,.72);margin-top:6px}
+.card .foot{margin-top:auto;padding-top:16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.price{font-weight:800;font-size:1.1rem}.price small{display:block;font-weight:400;font-size:.72rem;color:rgba(11,31,58,.6)}
+.card .btn{padding:9px 16px;font-size:.85rem}
+.alt{background:var(--mist)}
+/* services */
+.svc{padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff}
+.svc i{display:flex;width:46px;height:46px;border-radius:12px;background:rgba(19,184,166,.15);color:var(--turq2);align-items:center;justify-content:center;margin-bottom:12px}
+.svc p{font-size:.9rem;color:rgba(11,31,58,.7)}
+.svc a{display:inline-block;margin-top:10px;font-weight:600;font-size:.88rem;color:var(--turq2)}
+/* about */
+.two{display:grid;gap:36px;grid-template-columns:1fr 1fr;align-items:center}
+@media(max-width:800px){.two{grid-template-columns:1fr}}
+.two p+p{margin-top:14px}
+.mv{display:grid;gap:18px;grid-template-columns:1fr 1fr;margin-top:32px}
+@media(max-width:700px){.mv{grid-template-columns:1fr}}
+.mv div{background:#fff;border-radius:16px;padding:24px;border:1px solid var(--line)}
+/* reviews */
+.rev{background:var(--navy);color:#fff}
+.rev .card{background:rgba(255,255,255,.08);border-color:transparent;padding:22px}
+.rev .card p{color:rgba(255,255,255,.88);font-size:1rem}
+.star{color:#f5b301}
+.samp{color:var(--turq);font-size:.75rem;margin-top:10px}
+/* booking */
+.bk{display:grid;gap:30px;grid-template-columns:1fr 340px;margin-top:28px;align-items:start}
+@media(max-width:900px){.bk{grid-template-columns:1fr}}
+.fields{display:grid;gap:16px;grid-template-columns:1fr 1fr}
+.fields .full{grid-column:1/-1}
+@media(max-width:560px){.fields{grid-template-columns:1fr}}
+.err{color:#c0392b;font-size:.82rem;margin-top:3px;min-height:1px}
+.sum{background:var(--mist);border-radius:16px;padding:22px;border:1px solid var(--line);position:sticky;top:84px}
+.sum div{display:flex;justify-content:space-between;gap:10px;font-size:.9rem;padding:4px 0}
+.sum .t{border-top:1px solid var(--line);margin-top:8px;padding-top:12px;font-weight:800;font-size:1.05rem}
+.done{background:rgba(19,184,166,.1);border-radius:16px;padding:28px;margin-top:28px}
+.ref{font-size:1.8rem;font-weight:800;color:var(--turq2);letter-spacing:.06em}
+.note{font-size:.8rem;color:rgba(11,31,58,.6);margin-top:10px}
+/* contact */
+iframe{width:100%;height:270px;border:0;border-radius:16px;margin-top:22px}
+dl div{margin-bottom:12px}dt{font-size:.8rem;color:rgba(11,31,58,.6)}
+footer{background:var(--navy);color:rgba(255,255,255,.7);padding:44px 0 24px;font-size:.9rem}
+footer .logo{color:#fff}
+footer .cols{display:grid;gap:30px;grid-template-columns:2fr 1fr 1fr;margin-bottom:28px}
+@media(max-width:700px){footer .cols{grid-template-columns:1fr}}
+footer a{display:block;text-decoration:none;padding:3px 0}footer a:hover{color:var(--turq)}
+footer .c{border-top:1px solid rgba(255,255,255,.12);padding-top:18px;text-align:center;font-size:.8rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap bar">
+  <a class="logo" href="#home" aria-label="ALI RAZA TRAVELS home">
+    <svg width="38" height="38" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0B1F3A"/><circle cx="46" cy="19" r="6" fill="#13B8A6"/><path d="M6 50L24 22l9 14 7-9 18 23z" fill="#fff"/><path d="M24 22l5.5 9L24 28.5 19 32z" fill="#13B8A6"/><path d="M6 50h52v4Q32 47 6 54z" fill="#13B8A6"/></svg>
+    <span>ALI RAZA <b>TRAVELS</b></span>
+  </a>
+  <button id="menu" aria-label="Open menu" aria-expanded="false"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  <nav id="nav" aria-label="Main"><ul>
+    <li><a href="#home">Home</a></li><li><a href="#destinations">Destinations</a></li><li><a href="#packages">Tour Packages</a></li>
+    <li><a href="#about">About Us</a></li><li><a href="#services">Our Services</a></li><li><a href="#contact">Contact Us</a></li>
+    <li><a class="btn" href="#booking">Book Your Trip</a></li>
+  </ul></nav>
+</div>
+</header>
+
+<main>
+<div class="hero" id="home">
+  <svg id="heroArt" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"></svg>
+  <canvas id="snow" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <h1>Discover the Beauty of Pakistan</h1>
+    <p>Explore breathtaking destinations, unforgettable adventures, and extraordinary travel experiences with ALI RAZA TRAVELS.</p>
+    <div class="cta"><a class="btn" href="#packages">Explore Tour Packages</a><a class="btn ghost" href="#booking">Plan Your Adventure</a></div>
+    <form class="search" id="search">
+      <label>Destination<select id="sDest"><option value="">All destinations</option></select></label>
+      <label>Travel date<input type="date" id="sDate"></label>
+      <label>Travelers<input type="number" id="sTrav" min="1" max="50" value="2"></label>
+      <button class="btn" type="submit">Search Tours</button>
+    </form>
+  </div>
+</div>
+
+<section id="destinations"><div class="wrap">
+  <h2>Pakistan Tourism Destinations</h2><p class="sub">Pick a destination to see the tours we run there.</p>
+  <div class="grid" id="destGrid"></div>
+</div></section>
+
+<section id="packages" class="alt"><div class="wrap">
+  <h2>Tour Packages</h2><p class="sub" id="pkgSub">Thoughtfully planned trips with stays, transport and a day-by-day plan.</p>
+  <div class="grid" id="pkgGrid"></div>
+  <p id="pkgReset" style="margin-top:20px;display:none"><a href="#packages" id="showAll" style="color:var(--turq2);font-weight:600">Show all packages</a></p>
+</div></section>
+
+<section id="services"><div class="wrap">
+  <h2>Our Services</h2><p class="sub">Everything you need to travel Pakistan, from one hotel booking to a fully planned tour.</p>
+  <div class="grid" id="svcGrid"></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+  <div class="two">
+    <div>
+      <h2 style="margin-bottom:18px">About ALI RAZA TRAVELS</h2>
+      <p>ALI RAZA TRAVELS is a tourism and travel agency based in Lahore, Pakistan. We are passionate about helping travelers discover the breathtaking beauty, rich culture, and unforgettable adventures of Pakistan.</p>
+      <p>From the majestic mountains of Hunza and Skardu to the peaceful valleys of Swat and Naran Kaghan, we aim to make every journey comfortable, memorable, and enjoyable.</p>
+      <p>Our goal is to provide reliable travel services, thoughtfully organized tours, and memorable travel experiences for families, groups, couples, and adventure lovers.</p>
+    </div>
+    <svg id="aboutArt" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" style="width:100%;aspect-ratio:4/3;border-radius:16px" role="img" aria-label="Mountain landscape"></svg>
+  </div>
+  <div class="mv">
+    <div><h3>Our mission</h3><p style="margin-top:8px">To make travel across Pakistan comfortable and well organized, so travelers can focus on the places and people they came to see.</p></div>
+    <div><h3>Our vision</h3><p style="margin-top:8px">To be a Lahore travel agency that families, groups and adventure lovers trust to show them the best of Pakistan.</p></div>
+  </div>
+  <h3 style="margin-top:36px">Why choose us</h3>
+  <div class="mv" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+    <div><b>Organized itineraries</b><p style="margin-top:6px;font-size:.92rem">Day-by-day plans with stays, transport and inclusions.</p></div>
+    <div><b>Easy to reach</b><p style="margin-top:6px;font-size:.92rem">Visit our Lahore office, call, or message us on WhatsApp.</p></div>
+    <div><b>Flexible trips</b><p style="margin-top:6px;font-size:.92rem">Private, family, group or fully customized packages.</p></div>
+  </div>
+</div></section>
+
+<section class="rev"><div class="wrap">
+  <h2>What travelers say</h2>
+  <div class="grid" id="revGrid"></div>
+</div></section>
+
+<section id="booking"><div class="wrap">
+  <h2>Book Your Trip</h2><p class="sub">Send a booking request. It stays pending until our team confirms it with you.</p>
+  <form id="bform" class="bk" novalidate>
+    <div class="fields">
+      <label class="full">Tour package<select id="bPkg"></select></label>
+      <label>Full name<input id="bName" autocomplete="name"><div class="err" id="eName"></div></label>
+      <label>Phone number<input id="bPhone" inputmode="tel" placeholder="03XX XXXXXXX" autocomplete="tel"><div class="err" id="ePhone"></div></label>
+      <label class="full">Email address<input id="bEmail" type="email" autocomplete="email"><div class="err" id="eEmail"></div></label>
+      <label class="full">Travel date<select id="bDateSel"></select><input id="bDate" type="date"><div class="err" id="eDate"></div></label>
+      <label>Adults<input id="bAd" type="number" min="1" max="50" value="2"><div class="err" id="eAd"></div></label>
+      <label>Children<input id="bCh" type="number" min="0" max="50" value="0"></label>
+      <label class="full">Special requirements (optional)<textarea id="bReq" rows="3"></textarea></label>
+    </div>
+    <aside class="sum" aria-live="polite">
+      <h3>Booking summary</h3>
+      <p id="sumName" style="font-size:.9rem;font-weight:600;margin:6px 0 10px"></p>
+      <div><span id="sumA"></span><span id="sumAv"></span></div>
+      <div id="sumCRow"><span id="sumC"></span><span id="sumCv"></span></div>
+      <div class="t"><span>Estimated total</span><span id="sumT"></span></div>
+      <p class="note" id="sumN"></p>
+      <button class="btn" type="submit" style="width:100%;margin-top:16px">Submit Booking Request</button>
+    </aside>
+  </form>
+  <div class="done" id="done" hidden>
+    <h3>Booking request created</h3>
+    <p style="margin-top:6px">Your booking is <b>pending</b> until our team confirms it.</p>
+    <p class="note" style="margin-top:14px">Booking reference</p><p class="ref" id="ref"></p>
+    <p id="doneTxt" style="margin-top:8px"></p>
+    <p style="margin-top:18px"><a class="btn wa" id="waBtn" target="_blank" rel="noopener">Send Booking on WhatsApp</a></p>
+    <p class="note">This is a preview file: the booking is not saved anywhere. Send it on WhatsApp so the agency receives it.</p>
+  </div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+  <h2>Contact Us</h2>
+  <div class="two" style="align-items:start;margin-top:26px">
+    <div>
+      <h3>ALI RAZA TRAVELS</h3>
+      <dl style="margin-top:14px">
+        <div><dt>Owner</dt><dd>Ali Raza</dd></div>
+        <div><dt>Phone</dt><dd>03080369093</dd></div>
+        <div><dt>WhatsApp</dt><dd>+923080369093</dd></div>
+        <div><dt>Address</dt><dd>Thokar Niaz Baig, Near PSO Petrol Pump, Lahore, Pakistan</dd></div>
+        <div><dt>Business hours</dt><dd>Please call or message us on WhatsApp to confirm our opening hours.</dd></div>
+      </dl>
+      <p style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn dark" href="tel:+923080369093">Call Now</a><a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/923080369093?text=Assalam%20o%20Alaikum%2C%20I%20would%20like%20to%20know%20more%20about%20your%20tours.">Chat on WhatsApp</a></p>
+      <iframe title="ALI RAZA TRAVELS location map" loading="lazy" src="https://www.google.com/maps?q=Thokar%20Niaz%20Baig%2C%20Near%20PSO%20Petrol%20Pump%2C%20Lahore%2C%20Pakistan&output=embed"></iframe>
+    </div>
+    <form id="cform" class="card" style="padding:22px;gap:14px" novalidate>
+      <h3>Send us a message</h3>
+      <label>Name<input id="cName"></label>
+      <label>Email<input id="cEmail" type="email"></label>
+      <label>Message<textarea id="cMsg" rows="5"></textarea></label>
+      <div class="err" id="cErr"></div>
+      <button class="btn" type="submit">Send via WhatsApp</button>
+      <p class="note">Preview: this opens WhatsApp with your message. The full version saves messages in the database.</p>
+    </form>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div>
+      <a class="logo" href="#home"><span>ALI RAZA <b>TRAVELS</b></span></a>
+      <p style="margin-top:10px;max-width:380px">A tourism and travel agency based in Lahore, helping travelers discover the mountains, valleys and culture of Pakistan.</p>
+    </div>
+    <div><b style="color:#fff">Explore</b><a href="#destinations">Destinations</a><a href="#packages">Tour Packages</a><a href="#services">Our Services</a><a href="#about">About Us</a></div>
+    <div><b style="color:#fff">Visit us</b><span>Thokar Niaz Baig, Near PSO Petrol Pump, Lahore<br>03080369093</span></div>
+  </div>
+  <div class="c">© <span id="yr"></span> ALI RAZA TRAVELS, Lahore, Pakistan. All rights reserved.</div>
+</div></footer>
+
+<script>
+const PHONE="923080369093";
+const pkr=n=>"PKR "+n.toLocaleString("en-PK");
+const DESTS=[
+ ["hunza","Hunza Valley","Apricot orchards, ancient forts and the peaks of Rakaposhi.",62000],
+ ["skardu","Skardu","Gateway to the Karakoram: Shangrila Lake and the Deosai Plains.",68000],
+ ["naran","Naran Kaghan","Lake Saif-ul-Malook, alpine meadows and the Kunhar river.",38000],
+ ["swat","Swat Valley","Green valleys, rivers and hill towns like Malam Jabba.",28000],
+ ["fairy","Fairy Meadows","A high meadow facing Nanga Parbat, reached by a mountain trek.",55000],
+ ["murree","Murree","A classic hill station with pine forests near Islamabad.",null],
+ ["neelum","Neelum Valley","River, forest and village scenery including Arang Kel.",null],
+ ["chitral","Chitral","The Kalash valleys, Shandur Pass and Tirich Mir views.",null],
+ ["gilgit","Gilgit","The northern hub connecting Hunza, Skardu and the Karakoram Highway.",null],
+ ["islamabad","Islamabad","The green capital: Margalla Hills, Faisal Mosque, Daman-e-Koh.",null]
+];
+// Sample packages for this preview. In the full version these come from the database.
+const PKGS=[
+ {id:"hunza",d:"hunza",name:"Hunza Valley Adventure",days:5,nights:4,price:62000,max:12,desc:"Karakoram Highway, Attabad Lake, Passu Cones, Baltit Fort and Eagle's Nest."},
+ {id:"skardu",d:"skardu",name:"Skardu Explorer",days:6,nights:5,price:68000,max:12,desc:"Shangrila Lake, Upper Kachura, Manthokha Waterfall and the Deosai Plains."},
+ {id:"naran",d:"naran",name:"Naran Kaghan Family Tour",days:4,nights:3,price:38000,max:15,desc:"A relaxed family trip to Naran, Kaghan and Lake Saif-ul-Malook."},
+ {id:"swat",d:"swat",name:"Swat Valley Holiday",days:3,nights:2,price:28000,max:15,desc:"A short break with Malam Jabba, Kalam and riverside scenery."},
+ {id:"fairy",d:"fairy",name:"Fairy Meadows Adventure",days:5,nights:4,price:55000,max:10,desc:"Trek to Fairy Meadows for close views of Nanga Parbat."}
+];
+const SVCS=[
+ ["Domestic Tour Packages","Ready-made trips to Pakistan's most loved places.","M3 20l6-10 4 6 3-4 5 8z","#packages","View packages"],
+ ["Family Tours","Comfortable, relaxed itineraries for parents and children.","M12 12a3 3 0 100-6 3 3 0 000 6zM5 20a7 7 0 0114 0","#booking","Plan a family trip"],
+ ["Honeymoon Tours","Quiet valleys, lakeside stays and private moments.","M12 21s-7-4.6-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.4-7 10-7 10z","#contact","Ask about honeymoon trips"],
+ ["Group Tours","Shared departures for friends, colleagues and communities.","M8 11a3 3 0 100-6 3 3 0 000 6zM16 11a3 3 0 100-6 3 3 0 000 6zM2 20a6 6 0 0112 0M10 20a6 6 0 0112 0","#packages","See group tours"],
+ ["Private Tours","Your own vehicle, pace and schedule.","M5 12l5 5L20 7","#contact","Request a private tour"],
+ ["Hotel Reservations","Hotels and guesthouses matched to your budget.","M4 20V8l8-4 8 4v12M9 20v-6h6v6","#contact","Ask about hotels"],
+ ["Transportation Services","Cars, vans and coasters with experienced drivers.","M3 15V9l2-4h14l2 4v6M3 15h18","#contact","Ask about transport"],
+ ["Customized Travel Packages","Tell us your dates and interests; we build the plan.","M4 6h16M4 12h10M4 18h6","#booking","Plan your trip"],
+ ["Corporate Travel","Team trips and retreats arranged end to end.","M4 8h16v11H4zM9 8V5h6v3","#contact","Contact for corporate travel"],
+ ["Adventure Tourism","Treks, jeep tracks and high-altitude lakes.","M12 3l9 17H3z","#contact","Ask about adventures"]
+];
+const REVS=[
+ ["Sample Customer A",5,"Sample review for development: the itinerary was clear and the trip was well organized.","Hunza Valley Adventure"],
+ ["Sample Customer B",4,"Sample review for development: comfortable stays and a friendly driver.","Naran Kaghan Family Tour"],
+ ["Sample Customer C",5,"Sample review for development: Deosai was unforgettable.","Skardu Explorer"]
+];
+
+/* generated mountain art (no photos needed) */
+const PAL=[["#0B1F3A","#2b5d86","#F6C177",["#6c8fb0","#2f5f86","#0f2d4d"]],["#12304f","#13B8A6","#FFE3A3",["#8fd3cb","#2a9a90","#0d4a52"]],["#2a3f6b","#f2a477","#FFF1C9",["#c58a8c","#6a5a86","#26305c"]],["#0e3b43","#7ed3a8","#F4F7C9",["#8cc7a0","#3c8f6d","#14503f"]],["#1b2a49","#9db7d6","#FFFFFF",["#cfdceb","#7d97b8","#334a73"]]];
+function hash(s){let h=2166136261;for(const c of s)h=Math.imul(h^c.charCodeAt(0),16777619);return h>>>0}
+function art(key){const h=hash(key),p=PAL[h%5];let s=h;const r=()=>{s=(s+0x6d2b79f5)|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+ let out=`<defs><linearGradient id="g${h}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${p[0]}"/><stop offset="1" stop-color="${p[1]}"/></linearGradient></defs><rect width="400" height="300" fill="url(#g${h})"/><circle cx="${80+h%240}" cy="70" r="22" fill="${p[2]}" opacity=".9"/>`;
+ for(let i=0;i<3;i++){const b=150+i*42,a=110-i*24,n=8+i*2;let d=`M0 300L0 ${b}`;for(let j=0;j<=n;j++){const y=j%2?b-a*(.45+.55*r()):b-a*.15*r();d+=`L${(j*400/n).toFixed(1)} ${y.toFixed(1)}`}out+=`<path d="${d}L400 300Z" fill="${p[3][i]}"/>`}
+ return out}
+const $=id=>document.getElementById(id);
+$("aboutArt").innerHTML=art("about");
+/* winter scene with falling snow (hero) */
+function cap(x,y,h){return `<path d="M${x} ${y}L${x-h*.8} ${y+h}L${x-h*.4} ${y+h*.78}L${x-h*.1} ${y+h*1.02}L${x+h*.2} ${y+h*.8}L${x+h*.8} ${y+h}Z" fill="#fff"/>`}
+function pine(x,y,k){return `<g transform="translate(${x} ${y}) scale(${k})"><rect x="-2" y="0" width="4" height="10" fill="#3b2a20"/><path d="M0 -42L-13 -14H13Z M0 -30L-17 0H17Z M0 -16L-21 12H21Z" fill="#0f3d36"/><path d="M0 -42L-6 -29H6Z M0 -30L-8 -16H8Z M0 -16L-10 -2H10Z" fill="#fff"/></g>`}
+function winter(){
+ let o='<defs><linearGradient id="wg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B1F3A"/><stop offset=".6" stop-color="#4a7aa3"/><stop offset="1" stop-color="#bcd6ea"/></linearGradient></defs><rect width="400" height="300" fill="url(#wg)"/>';
+ o+='<circle cx="305" cy="58" r="17" fill="#f4f8ff" opacity=".95"/><circle cx="305" cy="58" r="30" fill="#f4f8ff" opacity=".12"/>';
+ for(let i=0;i<40;i++)o+=`<circle cx="${(i*97)%400}" cy="${(i*53)%110}" r="${i%4?.6:1}" fill="#fff" opacity=".7"/>`;
+ o+='<path d="M0 300V185L55 125L105 170L180 82L255 172L315 108L400 180V300Z" fill="#6f93b8"/>'+cap(180,82,48)+cap(55,125,32)+cap(315,108,36);
+ o+='<path d="M0 300V215L70 150L130 205L215 130L290 210L350 160L400 205V300Z" fill="#41688f"/>'+cap(215,130,40)+cap(70,150,34)+cap(350,160,28);
+ o+='<path d="M0 300V250Q90 215 190 245T400 235V300Z" fill="#eaf3fb"/><path d="M0 300V272Q110 250 220 268T400 262V300Z" fill="#fff"/>';
+ [[22,262,1.2],[52,270,.9],[84,258,.75],[330,262,1.1],[362,270,1.3],[390,260,.8],[300,268,.7]].forEach(t=>o+=pine(...t));
+ return o}
+$("heroArt").innerHTML=winter();
+/* falling snow */
+(function(){const c=$("snow"),x=c.getContext("2d"),hero=c.parentElement;let w,h,f=[];
+ const calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+ function size(){w=c.width=hero.clientWidth;h=c.height=hero.clientHeight;const n=Math.min(220,Math.round(w*h/6500));f=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,r:Math.random()*2.6+.8,v:Math.random()*.9+.4,p:Math.random()*6.28}))}
+ function draw(t){x.clearRect(0,0,w,h);x.fillStyle="#fff";for(const s of f){s.y+=s.v;s.x+=Math.sin(t/900+s.p)*.5;if(s.y>h+4){s.y=-4;s.x=Math.random()*w}x.globalAlpha=.55+s.r/6;x.beginPath();x.arc(s.x,s.y,s.r,0,6.283);x.fill()}if(!calm)requestAnimationFrame(draw)}
+ addEventListener("resize",size);size();requestAnimationFrame(draw)})();
+/* destination scenes: every place gets its own illustration */
+const gr=(id,a,b)=>`<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><rect width="400" height="300" fill="url(#${id})"/>`;
+const pa=(d,f,o)=>`<path d="${d}" fill="${f}"${o?` opacity="${o}"`:""}/>`;
+const orb=(x,y,r,c)=>`<circle cx="${x}" cy="${y}" r="${r*1.9}" fill="${c}" opacity=".18"/><circle cx="${x}" cy="${y}" r="${r}" fill="${c}"/>`;
+const tr=(x,y,s,c)=>`<rect x="${x-1.5*s}" y="${y}" width="${3*s}" height="${9*s}" fill="#4a3426"/><circle cx="${x}" cy="${y-2*s}" r="${11*s}" fill="${c}"/>`;
+const pn=(x,y,s,c)=>`<path d="M${x} ${y-40*s}L${x-12*s} ${y-12*s}H${x+12*s}Z M${x} ${y-28*s}L${x-16*s} ${y}H${x+16*s}Z" fill="${c||"#1f5a3e"}"/><rect x="${x-2*s}" y="${y}" width="${4*s}" height="${6*s}" fill="#3b2a20"/>`;
+const hs=(x,y,w,wall,roof)=>`<rect x="${x}" y="${y}" width="${w}" height="${w*.6}" fill="${wall}"/><path d="M${x-2} ${y}L${x+w/2} ${y-w*.4}L${x+w+2} ${y}Z" fill="${roof}"/>`;
+const fl=(x,y,w)=>`<rect x="${x}" y="${y}" width="${w}" height="${w*.55}" fill="#9a6b43"/><rect x="${x-2}" y="${y-3}" width="${w+4}" height="4" fill="#5b3f2a"/><rect x="${x+w*.4}" y="${y+w*.2}" width="${w*.18}" height="${w*.35}" fill="#3b2a20"/>`;
+const minaret=x=>`<rect x="${x}" y="175" width="6" height="90" fill="#f4efe6"/><path d="M${x-2} 175L${x+3} 156L${x+8} 175Z" fill="#f4efe6"/>`;
+const many=(f,a)=>a.map(t=>f(...t)).join("");
+const SC={
+hunza:()=>gr("h1","#3b4f86","#f2b27a")+orb(310,78,18,"#fff1c9")+pa("M0 300V175L90 115L150 155L240 42L330 142L400 125V300Z","#8d7aa8")+cap(240,42,62)+cap(90,115,34)+pa("M0 300V212Q100 165 200 202T400 192V300Z","#c98f4f")+`<rect x="108" y="170" width="46" height="22" fill="#8a6542"/><rect x="104" y="156" width="12" height="36" fill="#7a5a3c"/><rect x="146" y="160" width="12" height="32" fill="#7a5a3c"/><path d="M102 156L110 146L118 156ZM144 160L152 150L160 160Z" fill="#5b3f2a"/><rect x="124" y="176" width="8" height="16" fill="#3b2a20"/>`+pa("M0 300V250Q120 222 240 246T400 238V300Z","#9bb55a")+many(tr,[[30,262,1.1,"#e8a33d"],[70,270,1,"#d9742b"],[120,258,.9,"#f2c14e"],[260,266,1.2,"#e8a33d"],[310,258,1,"#d9742b"],[360,268,1.3,"#f2c14e"],[200,272,.8,"#d9742b"]]),
+skardu:()=>gr("k1","#5b9bd0","#e4f0f7")+pa("M0 300V150L70 95L130 140L210 70L290 135L350 100L400 140V300Z","#a58a6e")+cap(210,70,40)+cap(70,95,28)+pa("M0 300V190L100 150L190 185L300 140L400 180V300Z","#8e7358")+pa("M60 232Q200 200 340 232Q200 262 60 232Z","#3d9bb5")+`<path d="M120 236H280M140 243H260" stroke="#bfe6ef" stroke-width="2" opacity=".6"/>`+pa("M0 300V262Q90 240 180 268T400 252V300Z","#e3c58f")+pa("M0 300V285Q120 265 240 288T400 275V300Z","#d6b377")+hs(336,247,28,"#f1e6d2","#c0392b")+many(tr,[[326,254,.6,"#3f8f4e"],[376,254,.7,"#3f8f4e"],[46,240,.8,"#3f8f4e"]]),
+naran:()=>gr("n1","#4f93d1","#d7ebf5")+pa("M0 300V160L80 120L150 150L215 48L285 148L340 118L400 150V300Z","#7d93b3")+cap(215,48,58)+cap(80,120,26)+pa("M0 300V190Q80 165 160 190T320 176T400 190V300Z","#4f9a5b")+pa("M70 240Q200 212 330 240Q200 276 70 240Z","#2b8fa3")+pa("M215 236L190 262H240Z","#e6f2f7",.7)+pa("M0 300V262Q110 240 220 268T400 252V300Z","#3f8a4e")+many(pn,[[30,270,1.1],[62,278,.9],[345,268,1.2],[378,274,.9]]),
+swat:()=>gr("s1","#a8d8ea","#eaf6f0")+pa("M0 300V150Q70 105 150 145T300 120T400 150V300Z","#4c9a6b")+pa("M0 300V190Q100 140 200 185T400 165V300Z","#2f7a55")+`<rect y="170" width="400" height="22" fill="#fff" opacity=".35"/>`+pa("M0 300V235Q120 205 240 232T400 220V300Z","#1d5a40")+pa("M185 300Q200 262 215 238Q225 222 232 214L240 214Q236 226 232 240Q230 262 265 300Z","#4fb3d9")+`<path d="M205 290Q214 262 224 240" stroke="#fff" stroke-width="2" fill="none" opacity=".8"/>`+many(pn,[[28,262,1.3,"#14503f"],[64,270,1,"#14503f"],[110,258,1.2,"#14503f"],[300,256,1.2,"#14503f"],[340,268,1,"#14503f"],[375,258,1.4,"#14503f"]])+hs(130,246,24,"#e9dcc3","#a14b32")+hs(318,240,22,"#e9dcc3","#a14b32"),
+fairy:()=>gr("f1","#28345f","#f2a7a0")+orb(80,70,14,"#fff1c9")+pa("M0 300V205L80 150L170 22L260 125L305 92L400 195V300Z","#6b6f9a")+cap(170,22,92)+cap(305,92,34)+pa("M0 300V225L110 190L200 220L310 185L400 215V300Z","#4d7a5a")+pa("M0 300V252Q120 232 240 254T400 244V300Z","#5aa05a")+hs(150,254,26,"#a8744a","#4a3426")+hs(190,260,22,"#b5814f","#4a3426")+hs(250,256,26,"#a8744a","#4a3426")+many(pn,[[40,272,1.3],[75,278,1],[330,270,1.3],[368,276,1.1],[110,268,.8]]),
+murree:()=>gr("m1","#9db4c8","#e6edf2")+pa("M0 300V140Q100 95 200 135T400 110V300Z","#5e8a77")+`<rect y="150" width="400" height="20" fill="#fff" opacity=".4"/>`+pa("M0 300V190Q100 150 210 185T400 165V300Z","#3f7a5f")+hs(240,176,24,"#f2ece0","#c0392b")+hs(280,168,22,"#f2ece0","#b03a2e")+hs(90,190,24,"#f2ece0","#c0392b")+`<rect y="205" width="400" height="18" fill="#fff" opacity=".35"/>`+pa("M0 300V230Q120 205 240 232T400 218V300Z","#2d6a4f")+many(pn,[[20,250,1.4,"#14503f"],[50,262,1.1,"#14503f"],[85,246,1.3,"#14503f"],[125,264,1,"#14503f"],[160,252,1.4,"#14503f"],[205,266,1,"#14503f"],[250,250,1.3,"#14503f"],[290,266,1.1,"#14503f"],[330,250,1.4,"#14503f"],[372,262,1.2,"#14503f"]]),
+neelum:()=>gr("e1","#7fb7d9","#e1f0f4")+pa("M120 300V115L200 55L280 115V300Z","#9db3c9")+cap(200,55,38)+pa("M0 300V90Q70 90 140 170L195 300Z","#1f5a3e")+pa("M400 300V80Q330 85 260 170L205 300Z","#2e7a52")+pa("M170 300L196 175H204L240 300Z","#3fb6b0")+`<path d="M200 190V300" stroke="#fff" opacity=".6" stroke-dasharray="6 8" stroke-width="3"/>`+many(pn,[[40,150,1.3,"#14503f"],[80,190,1.2,"#14503f"],[120,225,1.1,"#14503f"],[330,140,1.3,"#1d6a47"],[300,190,1.2,"#1d6a47"],[270,225,1.1,"#1d6a47"]])+hs(120,262,28,"#a8744a","#4a3426")+hs(262,262,28,"#a8744a","#4a3426"),
+chitral:()=>gr("c1","#5f8fc4","#cfe3f2")+pa("M0 300V150L90 100L150 140L240 25L330 135L400 105V300Z","#7f8ea8")+cap(240,25,70)+cap(90,100,32)+pa("M0 300V200Q100 165 200 195T400 180V300Z","#6e8f5a")+fl(60,222,26)+fl(96,230,24)+fl(78,240,28)+fl(250,214,30)+fl(282,222,30)+fl(266,232,34)+pa("M0 300V262Q120 240 240 262T400 252V300Z","#8cb061")+many(tr,[[40,256,1,"#d9a441"],[330,256,1.2,"#6fa04a"],[362,266,1,"#d9a441"],[205,266,.9,"#6fa04a"]]),
+gilgit:()=>gr("g1","#86b5de","#f5e2c0")+pa("M0 300V140L80 90L150 135L220 70L300 130L370 95L400 120V300Z","#a58a6e")+cap(220,70,34)+pa("M0 300V190L110 150L200 190L300 145L400 185V300Z","#8f6b47")+pa("M0 250Q130 236 240 256T400 242V268Q250 282 130 268T0 270Z","#3a8fb7")+`<rect x="150" y="214" width="4" height="42" fill="#444"/><rect x="262" y="218" width="4" height="40" fill="#444"/><path d="M152 216Q208 250 264 220" stroke="#444" stroke-width="2" fill="none"/><rect x="150" y="254" width="116" height="3" fill="#6b4b2a"/>`+pa("M0 300V288Q150 270 250 285T400 275V300Z","#5a5a5a")+`<path d="M0 294Q150 278 250 292T400 283" stroke="#f5e2c0" stroke-width="2" stroke-dasharray="10 8" fill="none"/>`,
+islamabad:()=>gr("i1","#2b3a6b","#f29b6b")+orb(60,80,14,"#fff1c9")+pa("M0 300V150Q70 105 150 140T290 120T400 150V300Z","#2d4a52")+pa("M0 300V200Q120 165 240 195T400 180V300Z","#1f3a3a")+pa("M140 262L200 190L260 262Z","#f4efe6")+pa("M200 190L260 262H200Z","#e1d9c9")+minaret(112)+minaret(128)+minaret(272)+minaret(288)+pa("M0 300V268Q200 255 400 268V300Z","#1b4332")+many(tr,[[30,262,1,"#1f5a3e"],[370,262,1,"#1f5a3e"]])
+};
+const svg=(k,id)=>`<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="${k}">${SC[id]?SC[id]():art(k)}</svg>`;
+
+/* render */
+const dName=id=>DESTS.find(x=>x[0]===id)[1];
+$("destGrid").innerHTML=DESTS.map(d=>`<article class="card"><div class="img">${svg(d[1],d[0])}</div><div class="body"><h3>${d[1]}</h3><p>${d[2]}</p><div class="foot"><span class="price"><small>${d[3]?"Starting from":"Packages"}</small>${d[3]?pkr(d[3]):"Coming soon"}</span><a class="btn" href="#packages" data-dest="${d[0]}">Explore Destination</a></div></div></article>`).join("");
+$("sDest").innerHTML+=DESTS.map(d=>`<option value="${d[0]}">${d[1]}</option>`).join("");
+function showPkgs(dest,trav){
+ const list=PKGS.filter(p=>(!dest||p.d===dest)&&(!trav||p.max>=trav));
+ $("pkgGrid").innerHTML=list.length?list.map(p=>`<article class="card"><div class="img">${svg(p.name,p.d)}<span class="tag">${p.days} Days / ${p.nights} Nights</span></div><div class="body"><p style="color:var(--turq2);font-weight:600;margin:0">${dName(p.d)}</p><h3>${p.name}</h3><p>${p.desc}</p><div class="foot"><span class="price"><small>Starting from</small>${pkr(p.price)}</span><a class="btn" href="#booking" data-book="${p.id}">Book This Tour</a></div></div></article>`).join(""):`<p style="grid-column:1/-1">No packages match your search. <a href="#contact" style="color:var(--turq2);font-weight:600">Ask us for a custom package</a>.</p>`;
+ $("pkgReset").style.display=dest||trav?"block":"none";
+ $("pkgSub").textContent=dest?`Showing tours for ${dName(dest)}.`:"Thoughtfully planned trips with stays, transport and a day-by-day plan.";
+}
+showPkgs();
+$("showAll").onclick=()=>showPkgs();
+$("search").onsubmit=e=>{e.preventDefault();showPkgs($("sDest").value,+$("sTrav").value||0);const dt=$("sDate").value;if(dt)$("bDate").value=dt;$("packages").scrollIntoView()};
+document.addEventListener("click",e=>{
+ const a=e.target.closest("a");if(!a)return;
+ if(a.dataset.dest){showPkgs(a.dataset.dest)}
+ if(a.dataset.book){$("bPkg").value=a.dataset.book;calc()}
+});
+$("svcGrid").innerHTML=SVCS.map(s=>`<article class="svc"><i><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="${s[2]}"/></svg></i><h3>${s[0]}</h3><p>${s[1]}</p><a href="${s[3]}">${s[4]}</a></article>`).join("");
+$("revGrid").innerHTML=REVS.map(r=>`<article class="card"><span class="star" aria-label="${r[1]} out of 5 stars">${"★".repeat(r[1])}</span><p style="margin-top:8px">${r[2]}</p><p style="font-size:.85rem;margin-top:12px;color:rgba(255,255,255,.65)">${r[0]}, ${r[3]}</p><p class="samp">Sample review for development, not a real customer.</p></article>`).join("");
+$("yr").textContent=new Date().getFullYear();
+
+/* mobile menu */
+$("menu").onclick=()=>{const o=$("nav").classList.toggle("open");$("menu").setAttribute("aria-expanded",o)};
+$("nav").onclick=e=>{if(e.target.closest("a"))$("nav").classList.remove("open")};
+
+/* booking */
+$("bPkg").innerHTML=PKGS.map(p=>`<option value="${p.id}">${p.name} (${p.days}D/${p.nights}N) from ${pkr(p.price)}</option>`).join("");
+const tomorrow=new Date(Date.now()+864e5).toISOString().slice(0,10);
+$("bDate").min=tomorrow;
+// Sample departure Fridays for each package, so the date list works like the full version
+function fridays(n,start,step){const out=[],d=new Date();d.setUTCHours(0,0,0,0);d.setUTCDate(d.getUTCDate()+start);while(d.getUTCDay()!==5)d.setUTCDate(d.getUTCDate()+1);for(let i=0;i<n;i++){out.push(d.toISOString().slice(0,10));d.setUTCDate(d.getUTCDate()+step)}return out}
+const DEP={hunza:fridays(6,21,21),skardu:fridays(5,28,21),naran:fridays(8,10,14),swat:fridays(8,7,14),fairy:fridays(5,35,21)};
+const fmt=iso=>new Date(iso+"T00:00:00Z").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric",timeZone:"UTC"});
+function dates(){const p=$("bPkg").value;$("bDateSel").innerHTML='<option value="">Choose a departure date</option>'+DEP[p].map(d=>`<option value="${d}">${fmt(d)}</option>`).join("");$("bDate").style.display="none";}
+function calc(){
+ const p=PKGS.find(x=>x.id===$("bPkg").value),a=+$("bAd").value||0,c=+$("bCh").value||0,cp=Math.round(p.price/2);
+ $("sumName").textContent=p.name;$("sumA").textContent=`${a} adult${a===1?"":"s"} × ${pkr(p.price)}`;$("sumAv").textContent=pkr(a*p.price);
+ $("sumCRow").style.display=c?"flex":"none";$("sumC").textContent=`${c} child${c===1?"":"ren"} × ${pkr(cp)}`;$("sumCv").textContent=pkr(c*cp);
+ $("sumT").textContent=pkr(a*p.price+c*cp);$("sumN").textContent=`${a+c} traveler${a+c===1?"":"s"}. Children pay 50%. The final price is confirmed by our team.`;
+ return{p,a,c,total:a*p.price+c*cp}
+}
+$("bPkg").onchange=()=>{dates();calc()};$("bAd").oninput=calc;$("bCh").oninput=calc;dates();calc();
+function phoneOk(v){return /^(?:\+92|0092|92|0)?3\d{9}$/.test(v.replace(/[\s\-()]/g,""))}
+function normPhone(v){return "0"+v.replace(/[\s\-()]/g,"").slice(-10)}
+$("bform").onsubmit=e=>{
+ e.preventDefault();const{p,a,c,total}=calc();const E={};
+ if($("bName").value.trim().length<2)E.Name="Enter your full name";
+ if(!phoneOk($("bPhone").value))E.Phone="Enter a valid Pakistani mobile number, e.g. 0308 0369093";
+ if(!/^\S+@\S+\.\S+$/.test($("bEmail").value))E.Email="Enter a valid email address";
+ const date=$("bDateSel").value;if(!date)E.Date="Choose a travel date";
+ if(a<1)E.Ad="At least 1 adult is required";else if(a+c>p.max)E.Ad=`This package takes up to ${p.max} travelers`;
+ for(const k of["Name","Phone","Email","Date","Ad"])$("e"+k).textContent=E[k]||"";
+ if(Object.keys(E).length)return;
+ const ref="ART-"+new Date().toISOString().slice(2,10).replace(/-/g,"")+"-"+Array.from({length:6},()=>"ABCDEFGHJKLMNPQRSTUVWXYZ23456789"[Math.floor(Math.random()*32)]).join("");
+ const msg=["Assalam o Alaikum, I have submitted a booking request on your website.",`Name: ${$("bName").value.trim()}`,`Phone: ${normPhone($("bPhone").value)}`,`Package: ${p.name}`,`Travel date: ${fmt(date)}`,`Travelers: ${a+c} (${a} adults, ${c} children)`,`Booking reference: ${ref}`,`Estimated price: ${pkr(total)}`,$("bReq").value.trim()?`Notes: ${$("bReq").value.trim()}`:""].filter(Boolean).join("\n");
+ $("ref").textContent=ref;$("doneTxt").textContent=`${p.name} · ${fmt(date)} · ${pkr(total)} (estimated)`;
+ $("waBtn").href=`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`;
+ $("done").hidden=false;$("done").scrollIntoView({behavior:"smooth"});
+};
+
+/* contact */
+$("cform").onsubmit=e=>{
+ e.preventDefault();const n=$("cName").value.trim(),m=$("cMsg").value.trim(),em=$("cEmail").value.trim();
+ if(n.length<2||!/^\S+@\S+\.\S+$/.test(em)||m.length<10){$("cErr").textContent="Enter your name, a valid email and a message of at least 10 characters.";return}
+ $("cErr").textContent="";
+ window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(`Assalam o Alaikum, I am ${n} (${em}).\n${m}`)}`,"_blank","noopener");
+};
+</script>
+</body>
+</html>
